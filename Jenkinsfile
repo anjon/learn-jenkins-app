@@ -5,8 +5,8 @@ pipeline {
         stage('Build') {
             agent {
                 docker {
-                    image: 'node:20-slim'
-                    reuseNode: true
+                    image 'node:20-slim'
+                    reuseNode true
                 }
             }
             steps {
